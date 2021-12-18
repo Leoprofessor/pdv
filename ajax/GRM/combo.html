@@ -1,0 +1,44 @@
+<html>
+<head>
+<script>
+var n=0;
+function nome_funcao(v){
+if(v == "1"){
+var valor = "12345678910"
+if(valor == null){
+return false;
+}else{
+document.form1.marcas.options[document.form1.marcas.options.length] = new Option(valor,true);
+}
+}else{
+return false;
+}
+
+}
+</script>
+</head>
+<body>
+<form name="form1" method="post">
+<table>
+<tr>
+<td class="Desc_Opcoes_di">Categoria:</td>
+<td class="Desc_Opcoes_es" colspan="3">
+<select name="categorias" size="1" id="categorias" onChange="nome_funcao(this.options[this.selectedIndex].value);">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select>
+</td>
+</tr>
+<tr>
+<td class="Desc_Opcoes_di">Marca:</td>
+<td class="Desc_Opcoes_es" colspan="3">
+<select name="marcas" size="1" id="marcas">
+<option value="2">2</option>
+</select>
+</td>
+</tr>
+</form>
+</table>
+</body>
+</html>
